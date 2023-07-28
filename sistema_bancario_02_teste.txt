@@ -1,0 +1,352 @@
+# mensagem de boas vindas
+apresentacao = ' SISTEMA BANCÁRIO '
+print()
+print(apresentacao.center(60, '*'))
+print()
+
+# função para (Menu de opções = DEPOSITO)
+def depositar(conta_do_cliente):
+    '''
+    Depositar na conta do cliente (previamente cadastrado) valores de deposito no "saldo" e "extrato"
+
+    :parametro "conta_do_cliente": uma lista composta por dicionarios com informações dos clientes
+    '''
+    # variaves para operação
+    deposito = 0
+    chaves = False
+    # testa se número da agencia digitado pelo usuário existe existe (só existe agencia 0001)
+    agencia = teste_agencia('Agencia: ')
+    # testa se número da conta digitado pelo usuário existe
+    conta = teste_int('Conta: ')
+    
+
+    # filtra na lista "conta_do_cliente" agencia e conta do cliente para realizar deposito
+    for c in conta_do_cliente:
+        if agencia == c['agencia'] and conta == c['numero_da_conta_cliente']:
+            conta_do_cliente_temporario = c # auxilia temporariamente alterações de valores na "conta_do_cliente" (aponta na posição da memória)
+            chaves = True
+        else:
+            # caso "conta_do_cliente" não exista (chave = False) e função depositar é encerrada
+            continue
+    
+    # se "conta_do_cliente" existe (chave = True)
+    if chaves:
+        try:
+            print()
+            # entrada de parametro do usuário
+            deposito = float(input('Digite o valor de deposito: '))
+
+            # tomada de desisão (regrade negócio)
+            if deposito <= 0:
+                print('Deposito NÃO realizado, deposito menor ou igual a R$:0.00.')
+                return 
+            else:
+                conta_do_cliente_temporario['saldo'] += deposito # armazena "deposito" no saldo = "conta_do_cliente"
+                conta_do_cliente_temporario['extrato'] += [str(f'Deposito = R$:{deposito:.2f}')] # armazena informação no extrato
+                print('Deposito realizado com sucesso!!!')              
+                return 
+                
+        # mesagem de "erro" para valores não validos digitado pelo usuário e encerrada função
+        except Exception as erro:
+            print(f'\nErro de operação => ({erro})')
+            print('Verifique o valor digitado!!!')
+            return
+    else:
+        # mensagem para usuário caso "conta_do_cliente" NÃO existe e encerrada função
+        print(f'\nNão existe conta: {conta} na agencia: {agencia}')
+        return 
+
+def sacar(conta_do_cliente):
+    saque = 0
+    LIMITE_DE_SAQUE = 500
+    agencia = teste_agencia('Agencia: ')
+    conta = teste_int('Conta: ')
+    chaves = False
+
+    for c in conta_do_cliente:
+        if agencia == c['agencia'] and conta == c['numero_da_conta_cliente']:
+            conta_do_cliente_temporario = c
+            chaves = True
+        else:
+            continue
+    
+    if chaves:
+        try:
+            print()
+            # entrada de parametro do usuário
+            saque = float(input('Digite o valor de saque: '))
+
+            # tomada de desisão (regrade negócio)
+            if conta_do_cliente_temporario['limite_de_saque_diario'] >= 3:
+                print('Saque NÃO realizar, já foi atigindo limite diario de (3 saques diário).\n')
+                return 
+            elif saque > LIMITE_DE_SAQUE:
+                print('Saque NÃO realizar seu limite para saque é de R$:500,00.\n')
+                return 
+            elif saque > conta_do_cliente_temporario['saldo']:
+                print('Saque NÃO realizar, saldo insuficiente.\n')
+                return 
+            elif saque <= 0:
+                print('Saque NÃO realizar, saque menor ou igual a R$:0.00.\n')
+                return 
+            else:
+                conta_do_cliente_temporario['limite_de_saque_diario'] += 1
+                conta_do_cliente_temporario['saldo'] -= saque
+                conta_do_cliente_temporario['extrato'] += [str(f'  Sacado = R$:{saque:.2f}')] 
+                print('Saque realizado com sucesso!!!')              
+                return 
+
+        # mesagem de erro para valores não validos
+        except Exception as erro:
+            print(f'\nErro de operação => ({erro})')
+            print('Verifique o valor digitado!!!')
+            return
+
+def extrato_bancario(conta_do_cliente):
+    agencia = teste_agencia('Agencia: ')
+    conta = teste_int('Conta: ')
+    conta_do_cliente_temporario = 0
+    chave = False
+
+    for c in conta_do_cliente:
+        if agencia == c['agencia'] and conta == c['numero_da_conta_cliente']:
+            conta_do_cliente_temporario = c
+            chave = True
+        else:
+            continue
+    
+    if chave:
+        print()
+        print(' Exetrato bancario '.center(25, '#'))
+        print(f"CPF: {conta_do_cliente_temporario['cliente']['cpf']}")
+        print('-' * 25)
+        if conta_do_cliente_temporario['extrato'] == []:
+            print('Saldo total R$:0.00')
+        else:
+            for i in conta_do_cliente_temporario['extrato']:
+                print(i)
+            print('-' * 25)
+            print(f"Saldo total R$:{conta_do_cliente_temporario['saldo']}")
+            
+    else:
+        print(f'\nNão existe conta: {conta} na agencia: {agencia}')
+
+def op(loop_op):
+    # opções para encerra loop e finalizar programa
+    while True:
+        # entrada de parametro do usuário
+        loop_op = input('\nDeseja finalizar Sim = [s] ou Não = [n]:').lower()
+
+        # resposta para usuário
+        if loop_op == 's':
+            loop_op = False
+            break
+        elif loop_op == 'n':
+            loop_op = True
+            break
+        else:
+            # mensagem de erro caso  a resposta não seja Sim [s] ou Não [n]
+            loop_op = True
+            print('\nOpeção invalida!!! \nDigite [s] para FINALIZAR ou [n] RETORNAR')
+    return loop_op       
+
+def cadastro_cliente(clientes_cadastro_cliente):
+
+    #  testa se usuário digitou somente números (função "teste_int") e armazena em cpf
+    cpf = teste_int('Informe o CPF (somente número): ')
+
+    # se cpf for diferente de 11 digitos (finaliza função com mensagem para o usuário)
+    if len(str(cpf)) != 11:
+        return print('CPF digitado não esta com 11 digitos')
+
+    # teste se CPF do clente já possui cadastro (função "filtro_cpf")
+    cpf_existe = filtro_cpf(clientes_cadastro_cliente, cpf)
+
+    # se filtro cpf_existe retornat "True" (finaliza função com mensagem para o usuário)
+    if cpf_existe:
+        return print(f'Já existe usuário com esse CPF de número{cpf}')
+    
+    # continuação do cadastro
+    nome = input('Informe o nome completo:')
+    data_nascimento = input('Informe a data de mascimento (dd/mm/aaaa):')
+    endereco = endereco_cliente()
+
+    # armazena dados dos clientes cadastrado
+    clientes_cadastro_cliente.append(dict(cpf = cpf, nome = nome, data_nascimento = data_nascimento, endereco = endereco ))
+    print('Cadastro de cliente realizado com sucesso!!!')
+
+
+def abrir_conta(clientes_abrirconta, numero_da_conta_cliente_abrir_conta, conta_do_cliente):
+    limite_de_saque_diario = 0
+    agencia = '0001'
+    extrato = []
+    saldo = 0
+    
+    #  testa se usuário digitou somente números (função "teste_int") e armazena em cpf
+    cpf = teste_int('\nInforme o CPF (somente número): ')
+
+    # se cpf for diferente de 11 digitos (finaliza função com mensagem para o usuário)
+    if len(str(cpf)) != 11:
+        return print('\nCPF digitado não esta com 11 digitos')
+
+    # teste se CPF do clente já possui cadastro (função "filtro_cpf")
+    cpf_existe = filtro_cpf(clientes_abrirconta, cpf)
+    
+
+    # se filtro cpf_existe retornat "True" (finaliza função com mensagem para o usuário)
+    if not cpf_existe:
+        return print(f'\nNão existe cliente com este CPF: {cpf}')
+
+    conta_do_cliente.append({'agencia' : agencia, 'numero_da_conta_cliente' : numero_da_conta_cliente_abrir_conta, \
+                            'cliente' : cpf_existe[1], 'saldo' : saldo, 'extrato' : extrato, 'limite_de_saque_diario' : limite_de_saque_diario})
+    
+    return print(f'\nAbertura da conta realizada com sucesso!!!\n\n {conta_do_cliente[numero_da_conta_cliente_abrir_conta - 1]}')
+    
+
+def exibir_clientes_cadastrados(clientes):
+
+    if clientes == []:
+        print('\nNão há clientes cadastrados')
+    else:
+        print()
+        print('-' * 170)
+        for c in clientes:
+            print(c)
+            print('-' * 170)
+
+def exibir_contas_bancarias(conta_do_cliente):
+    if conta_do_cliente == []:
+        print('\nNão há contas cadastradas')
+    else:
+        print()
+        print('-' * 170)
+        for c in conta_do_cliente:
+            print(c)
+            print('-' * 170)
+
+# -------------------------------------------------- FUNÇÕES AUXILIARES --------------------------------------------------------
+
+# testar número
+def teste_int(msg):
+    """
+    Testa caractere e permanece em loop infinito até usuário
+    digitar um valor numérico valida (número inteiro).
+
+    :msg : texto descrito pelo usuário 
+    :num_str: Variável testada
+    :num_int : Variável transformada em int()
+    :erro : mensagem do tipo de erro
+    :return: Retorna valor numérico do tipo inteiro
+    """
+    while True:
+        try:
+            num_str = input(msg).strip()
+            num_int = int(num_str)
+            return num_int
+        except Exception as erro:
+            print()
+            print(f'\nErro de operação => ({erro})')
+            print(f'Caractere "{num_str}" não é valido.')
+
+# testar agencia
+def teste_agencia(msg):
+    agencia = input(msg).strip()
+    if agencia == '0001':
+        return agencia
+    else:
+        print('Agencia não existe!')
+        main()
+
+# testar se já existe cpf cadastrado
+def filtro_cpf(clientes_cadastro_cliente, cpf):
+    # filtra se "cpf" do cliente já esta cadastrado e retorna "True" + ("cpf_filtrado" = dados do cliente) ou "False"
+    for cpf_existe in clientes_cadastro_cliente:
+        if cpf_existe['cpf'] == cpf:
+            return True, cpf_existe
+        else:
+            continue
+    return False
+
+# auxilia criação de endereço dentro da função "cadastro_cliente"
+def endereco_cliente():
+   logradouro = input('Logradouro: ')
+   numero = input('Número: ')
+   bairro = input('Bairro: ')
+   cidade = input('Cidade: ')
+   estado = input('Estado: ')
+   endereco = dict(logradouro = logradouro, numero = numero, bairro = bairro, cidade = cidade, estado = estado)
+   return endereco
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# corpo principal do programa
+def main():
+    # Variaveis globais
+    loop = True
+    clientes = [{'cpf': 12345678900, 'nome': 'Décio', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Mendanha', 'numero': '1111', 'bairro': 'CG', 'cidade': 'RJ', 'estado': 'RJ'}}, {'cpf': 12312312344, 'nome': 'Luana', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'Aratanha', 'numero': '2222', 'bairro': 'CG', 'cidade': 'RJ', 'estado': 'RJ'}}]
+    conta_do_cliente = [{'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678900, 'nome': 'Décio', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Mendanha', 'numero': '1111', 'bairro': 'CG', 'cidade': 'RJ', 'estado': 'RJ'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario' : 0}]
+
+    # loop do sistema bancário
+    while loop:
+        menu =  '''
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA 
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+                '''
+        # exibir menu de opções
+        print(menu)
+
+        # entrada de parametro do usuário
+        opcao = input('Escolha uma opção:').lower()
+        print('=' * 60)
+
+        # Menu de opções = DEPOSITO
+        if opcao == '1':
+            # retorna "saldo" pela função "deposito"
+            depositar(conta_do_cliente)
+            
+        # Menu de opções = SAQUE
+        elif opcao == '2':
+            # retorna "saldo" e "limite_de_saque_diario" pela função "sacar"
+            sacar(conta_do_cliente)
+
+        # Menu de opções = EXTRATO
+        elif opcao == '3':
+            # retorna "extrato" da função "extrato_bancario"
+            extrato_bancario(conta_do_cliente)
+
+        # Menu de opções = CADASTRO CLIENTE
+        elif opcao == '4':
+            cadastro_cliente(clientes)
+
+        # Menu de opções = ABRIR CONTA 
+        elif opcao == '5':
+            numero_da_conta_cliente = len(conta_do_cliente) + 1
+            abrir_conta(clientes, numero_da_conta_cliente, conta_do_cliente)
+
+        # Menu de opções = EXIBIR CLIENTES CADASTRADOS
+        elif opcao == '6':
+            exibir_clientes_cadastrados(clientes)
+
+        # Menu de opções = EXIBIR CONTAS BANCARIAS
+        elif opcao == '7':
+            exibir_contas_bancarias(conta_do_cliente)
+
+        # Menu de opções = FINALIZAR
+        elif opcao == '8':
+            loop = op(loop)
+
+        else:
+            # caso usuário digite qualquer opção não existente no "Menu de opções" 
+            print('Opção invalida, digite a letra correspondente ao menu de opções:')
+
+main()
+
+print('\nSistema finalizado com sucesso!!!\n')
