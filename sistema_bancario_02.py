@@ -90,7 +90,7 @@ def sacar(conta_do_cliente):
 
             # tomada de decisão (regra de negócio) para usuário
             if conta_do_cliente_temporario['limite_de_saque_diario'] >= 3:
-                print('Saque NÃO realizar, já foi atigindo limite diario de (3 saques diário).\n')
+                print('Saque NÃO realizar, já foi atingido limite diário de (3 saques diário).\n')
                 return 
             elif saque > LIMITE_DE_SAQUE:
                 print('Saque NÃO realizar seu limite para saque é de R$:500,00.\n')
@@ -145,7 +145,7 @@ def extrato_bancario(conta_do_cliente):
     # se "conta_do_cliente" existe (chave = True)
     if chave:
         print()
-        print(' Exetrato bancario '.center(25, '#'))
+        print(' Extrato bancário '.center(25, '#'))
         print(f"CPF: {conta_do_cliente_temporario['cliente']['cpf']}") # exibe CPF "conta_do_cliente"
         print('-' * 25)
         if conta_do_cliente_temporario['extrato'] == []:
@@ -290,7 +290,7 @@ def op(loop_op):
         else:
             # mensagem de erro caso  a resposta não seja Sim [s] ou Não [n]
             loop_op = True
-            print('\nOpeção invalida!!! \nDigite [s] para FINALIZAR ou [n] RETORNAR')
+            print('\nOpção invalida!!! \nDigite [s] para FINALIZAR ou [n] RETORNAR')
     # retorna novo valor para variável global "loop"    
     return loop_op 
 
@@ -349,7 +349,7 @@ def filtro_cpf(clientes, cpf):
 # função auxilia criação de endereço dentro da função "cadastro_cliente"
 def endereco_cliente():
    '''
-   Cria em forma de {dicionário} parametros de endereço:
+   Cria em forma de {dicionário} parametros do endereço:
    dict(logradouro = logradouro, numero = numero, bairro = bairro, cidade = cidade, estado = estado) 
    '''
    logradouro = input('Logradouro: ')
@@ -371,7 +371,7 @@ def main():
 
     # loop do sistema bancário
     while loop:
-        # menu de operações existentes => "menu de opções"
+        # menu de operações existentes => "menu de opções"atingidoatigindo
         menu =  '''
 ============================================================
                     Menu de opções:
