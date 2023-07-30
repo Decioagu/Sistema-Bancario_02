@@ -1,5 +1,5 @@
 # Sistema Bancário em Python
-Neste desafio, foi otimizado um **Sistema Bancário** previamente desenvolvido com o uso de funções em Python. O objetivo é aprimorar a estrutura e a eficiência do sistema, implementando as operações de depósito, saque e extrato. Houve implementação de outras funções como:
+Neste desafio, foi otimizado um **Sistema Bancário** previamente desenvolvido com o uso de funções em Python. O objetivo é aprimorar a estrutura do logaritmo nas operações de depósito, saque e extrato. Houve implementação de outras funções como:
 * Cadastro de cliente
 * Abrir conta
 * Exibir clientes cadastrados
