@@ -247,7 +247,7 @@ def abrir_conta(clientes, numero_da_conta_cliente, conta_do_cliente):
                             'cliente' : cpf_existe[1], 'saldo' : saldo, 'extrato' : extrato, 'limite_de_saque_diario' : limite_de_saque_diario})
     # OBS: cpf_existe[1] retorna uma tupla com dois valores (True, dicionário {clientes}) selecionado pelo parâmetro de "cpf" na função auxiliar "filtro_cpf")
 
-    return print(f'\nAbertura da conta realizada com sucesso!!!\n\n {conta_do_cliente[numero_da_conta_cliente - 1]}')
+    return print(f'\nAbertura da conta realizada com sucesso!!!\n\n Conta=> {conta_do_cliente[numero_da_conta_cliente - 1]}')
     
 # função para ("menu de opções" = EXIBIR CLIENTES CADASTRADOS)
 def exibir_clientes_cadastrados(clientes):
