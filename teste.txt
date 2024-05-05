@@ -1,0 +1,1175 @@
+PS P:\REPOSITORIO\PUBLICO\Sistema-Bancario_02> & p:/REPOSITORIO/PUBLICO/Sistema-Bancario_02/venv/Scripts/python.exe p:/REPOSITORIO/PUBLICO/Sistema-Bancario_02/sistema_bancario_02.py
+
+********************* SISTEMA BANCÁRIO *********************
+
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA 
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:s
+============================================================
+Opção invalida, digite o NUMERO correspondente ao "Menu de opções:"
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA 
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: 2
+Conta: 3
+
+Não existe conta ou agencia solicitada...
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:6
+============================================================
+
+Não há clientes cadastrados
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+Não há contas cadastradas
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:4
+============================================================
+Informe o CPF (somente número): DSA
+
+
+Erro de operação => (invalid literal for int() with base 10: 'DSA')
+Caractere "DSA" não é valido.
+Informe o CPF (somente número): 123456789
+CPF digitado não esta com 11 dígitos
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:4
+============================================================
+Informe o CPF (somente número): 12345678911
+Informe o nome completo:DSA
+Informe a data de nascimento (dd/mm/aaaa):11/11/1111
+Logradouro: Q
+Número: 1
+Bairro: W
+Cidade: E
+Estado: E
+Cadastro de cliente realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:4
+============================================================
+Informe o CPF (somente número): 12345678922
+Informe o nome completo:JKL
+Informe a data de nascimento (dd/mm/aaaa):22/22/2222
+Logradouro: P
+Número: 2
+Bairro: O
+Cidade: I
+Estado: I
+Cadastro de cliente realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:4
+============================================================
+Informe o CPF (somente número): 12345678922
+Já existe usuário com esse CPF de número12345678922
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:6
+============================================================
+
+..................................................................................................................................        
+{'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}
+..................................................................................................................................        
+{'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}
+..................................................................................................................................        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+Não há contas cadastradas
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:5
+============================================================
+
+Informe o CPF (somente número): 12345678900
+
+Não existe cliente com este CPF: 12345678900
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:5
+============================================================
+
+Informe o CPF (somente número): 12345678911
+
+Abertura da conta realizada com sucesso!!!
+
+ {'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario': 0}
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:5
+============================================================
+
+Informe o CPF (somente número): 12345678911
+
+Abertura da conta realizada com sucesso!!!
+
+ {'agencia': '0001', 'numero_da_conta_cliente': 2, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario': 0}
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:5
+============================================================
+
+Informe o CPF (somente número): 12345678922
+
+Abertura da conta realizada com sucesso!!!
+
+ {'agencia': '0001', 'numero_da_conta_cliente': 3, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario': 0}
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:6
+============================================================
+
+..................................................................................................................................        
+{'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}
+..................................................................................................................................        
+{'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}
+..................................................................................................................................        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 2, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 3, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+============================================================
+Opção invalida, digite o NUMERO correspondente ao "Menu de opções:"
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 9
+Conta: 2
+
+Não existe conta ou agencia solicitada...
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:s
+============================================================
+Opção invalida, digite o NUMERO correspondente ao "Menu de opções:"
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:0001
+============================================================
+Opção invalida, digite o NUMERO correspondente ao "Menu de opções:"
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de saque: 600
+Saque NÃO realizar seu limite para saque é de R$:500,00.
+
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de saque: 100
+Saque NÃO realizar, saldo insuficiente.
+
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: 0001
+Conta: 4
+
+Não existe conta ou agencia solicitada...
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de deposito: 1500
+Deposito realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: 0001
+Conta: 2
+
+Digite o valor de deposito: 1000
+Deposito realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: 0001
+Conta: 3
+
+Digite o valor de deposito: 500
+Deposito realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:3
+============================================================
+Agencia: 0001
+Conta: 1
+
+#### Extrato bancário ###
+CPF: 12345678911
+-------------------------
+Deposito = R$:1500.00
+-------------------------
+Saldo total R$:1500.0
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de deposito: 500
+Deposito realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:3
+============================================================
+Agencia: 0001
+Conta: 1
+
+#### Extrato bancário ###
+CPF: 12345678911
+-------------------------
+Deposito = R$:1500.00
+Deposito = R$:500.00
+-------------------------
+Saldo total R$:2000.0
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:s
+============================================================
+Opção invalida, digite o NUMERO correspondente ao "Menu de opções:"
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de saque: 600
+Saque NÃO realizar seu limite para saque é de R$:500,00.
+
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 1   
+
+Digite o valor de saque: 500
+Saque realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de saque: 400
+Saque realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de saque: 300
+Saque realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de saque: 200
+Saque NÃO realizar, já foi atingido limite diário de (3 saques diário).
+
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:3
+============================================================
+Agencia: 0001
+Conta: 1
+
+#### Extrato bancário ###
+CPF: 12345678911
+-------------------------
+Deposito = R$:1500.00
+Deposito = R$:500.00
+  Sacado = R$:500.00
+  Sacado = R$:400.00
+  Sacado = R$:300.00
+-------------------------
+Saldo total R$:800.0
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:6
+============================================================
+
+..................................................................................................................................        
+{'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}
+..................................................................................................................................        
+{'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}
+..................................................................................................................................        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 800.0, 'extrato': ['Deposito = R$:1500.00', 'Deposito = R$:500.00', '  Sacado = R$:500.00', '  Sacado = R$:400.00', '  Sacado = R$:300.00'], 'limite_de_saque_diario': 3}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 2, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 1000.0, 'extrato': ['Deposito = R$:1000.00'], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 3, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 500.0, 'extrato': ['Deposito = R$:500.00'], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 3
+
+Digite o valor de saque: 500
+Saque realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 3
+
+Digite o valor de saque: 100
+Saque NÃO realizar, saldo insuficiente.
+
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:3
+============================================================
+Agencia: 0001
+Conta: 3
+
+#### Extrato bancário ###
+CPF: 12345678922
+-------------------------
+Deposito = R$:500.00
+  Sacado = R$:500.00
+-------------------------
+Saldo total R$:0.0
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: 0001
+Conta: 3
+
+Digite o valor de deposito: 300
+Deposito realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:3
+============================================================
+Agencia: 0001
+Conta: 3
+
+#### Extrato bancário ###
+CPF: 12345678922
+-------------------------
+Deposito = R$:500.00
+  Sacado = R$:500.00
+Deposito = R$:300.00
+-------------------------
+Saldo total R$:300.0
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:6
+============================================================
+
+..................................................................................................................................        
+{'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}
+..................................................................................................................................        
+{'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}
+..................................................................................................................................        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 800.0, 'extrato': ['Deposito = R$:1500.00', 'Deposito = R$:500.00', '  Sacado = R$:500.00', '  Sacado = R$:400.00', '  Sacado = R$:300.00'], 'limite_de_saque_diario': 3}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 2, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 1000.0, 'extrato': ['Deposito = R$:1000.00'], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 3, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 300.0, 'extrato': ['Deposito = R$:500.00', '  Sacado = R$:500.00', 'Deposito = R$:300.00'], 'limite_de_saque_diario': 1}
+----------------------------------------------------------------------------------------------------------------------------------        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: d
+Conta: d
+
+
+Erro de operação => (invalid literal for int() with base 10: 'd')
+Caractere "d" não é valido.
+Conta: 5
+
+Não existe conta ou agencia solicitada...
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: e
+Conta: r
+
+
+Erro de operação => (invalid literal for int() with base 10: 'r')
+Caractere "r" não é valido.
+Conta: 4
+
+Não existe conta ou agencia solicitada...
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:6
+============================================================
+
+..................................................................................................................................        
+{'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}
+..................................................................................................................................        
+{'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}
+..................................................................................................................................        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 800.0, 'extrato': ['Deposito = R$:1500.00', 'Deposito = R$:500.00', '  Sacado = R$:500.00', '  Sacado = R$:400.00', '  Sacado = R$:300.00'], 'limite_de_saque_diario': 3}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 2, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 1000.0, 'extrato': ['Deposito = R$:1000.00'], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 3, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 300.0, 'extrato': ['Deposito = R$:500.00', '  Sacado = R$:500.00', 'Deposito = R$:300.00'], 'limite_de_saque_diario': 1}
+----------------------------------------------------------------------------------------------------------------------------------        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:2
+============================================================
+Agencia: 0001
+Conta: 1
+
+Digite o valor de saque: 1
+Saque NÃO realizar, já foi atingido limite diário de (3 saques diário).
+
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:6
+============================================================
+
+..................................................................................................................................        
+{'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}
+..................................................................................................................................        
+{'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}
+..................................................................................................................................        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 800.0, 'extrato': ['Deposito = R$:1500.00', 'Deposito = R$:500.00', '  Sacado = R$:500.00', '  Sacado = R$:400.00', '  Sacado = R$:300.00'], 'limite_de_saque_diario': 3}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 2, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 1000.0, 'extrato': ['Deposito = R$:1000.00'], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 3, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 300.0, 'extrato': ['Deposito = R$:500.00', '  Sacado = R$:500.00', 'Deposito = R$:300.00'], 'limite_de_saque_diario': 1}
+----------------------------------------------------------------------------------------------------------------------------------        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:8
+============================================================
+
+Deseja finalizar Sim = [s] ou Não = [n]:n
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:5
+============================================================
+
+Informe o CPF (somente número): 12345678922
+
+Abertura da conta realizada com sucesso!!!
+
+ {'agencia': '0001', 'numero_da_conta_cliente': 4, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario': 0}
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 800.0, 'extrato': ['Deposito = R$:1500.00', 'Deposito = R$:500.00', '  Sacado = R$:500.00', '  Sacado = R$:400.00', '  Sacado = R$:300.00'], 'limite_de_saque_diario': 3}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 2, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 1000.0, 'extrato': ['Deposito = R$:1000.00'], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 3, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 300.0, 'extrato': ['Deposito = R$:500.00', '  Sacado = R$:500.00', 'Deposito = R$:300.00'], 'limite_de_saque_diario': 1}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 4, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 0, 'extrato': [], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:1
+============================================================
+Agencia: 0001
+Conta: 4
+
+Digite o valor de deposito: 20
+Deposito realizado com sucesso!!!
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:6
+============================================================
+
+..................................................................................................................................        
+{'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}
+..................................................................................................................................        
+{'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}
+..................................................................................................................................        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:7
+============================================================
+
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 1, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 800.0, 'extrato': ['Deposito = R$:1500.00', 'Deposito = R$:500.00', '  Sacado = R$:500.00', '  Sacado = R$:400.00', '  Sacado = R$:300.00'], 'limite_de_saque_diario': 3}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 2, 'cliente': {'cpf': 12345678911, 'nome': 'DSA', 'data_nascimento': '11/11/1111', 'endereco': {'logradouro': 'Q', 'numero': '1', 'bairro': 'W', 'cidade': 'E', 'estado': 'E'}}, 'saldo': 1000.0, 'extrato': ['Deposito = R$:1000.00'], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 3, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 300.0, 'extrato': ['Deposito = R$:500.00', '  Sacado = R$:500.00', 'Deposito = R$:300.00'], 'limite_de_saque_diario': 1}
+----------------------------------------------------------------------------------------------------------------------------------        
+{'agencia': '0001', 'numero_da_conta_cliente': 4, 'cliente': {'cpf': 12345678922, 'nome': 'JKL', 'data_nascimento': '22/22/2222', 'endereco': {'logradouro': 'P', 'numero': '2', 'bairro': 'O', 'cidade': 'I', 'estado': 'I'}}, 'saldo': 20.0, 'extrato': ['Deposito = R$:20.00'], 'limite_de_saque_diario': 0}
+----------------------------------------------------------------------------------------------------------------------------------        
+
+============================================================
+                    Menu de opções:
+                    [1] DEPOSITO
+                    [2] SAQUE
+                    [3] EXTRATO
+                    [4] CADASTRO CLIENTE
+                    [5] ABRIR CONTA
+                    [6] EXIBIR CLIENTES CADASTRADOS
+                    [7] EXIBIR CONTAS BANCARIAS
+                    [8] FINALIZAR
+
+Escolha uma opção:8
+============================================================
+
+Deseja finalizar Sim = [s] ou Não = [n]:s
+
+Sistema finalizado com sucesso!!!
+
+PS P:\REPOSITORIO\PUBLICO\Sistema-Bancario_02> 

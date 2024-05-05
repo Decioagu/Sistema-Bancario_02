@@ -53,7 +53,7 @@ def depositar(conta_do_cliente):
             return
     else:
         # mensagem para usuário caso "conta_do_cliente" NÃO existe e encerrada função
-        print(f'\nNão existe conta: {conta} na agencia: {agencia}')
+        print(f'\nNão existe conta ou agencia solicitada...')
         return 
 
 # função para ("menu de opções" = SAQUE)
@@ -115,7 +115,7 @@ def sacar(conta_do_cliente):
             return
     else:
         # mensagem para usuário caso "conta_do_cliente" NÃO existe e encerrada função
-        print(f'\nNão existe conta: {conta} na agencia: {agencia}')
+        print(f'\nNão existe conta ou agencia solicitada...')
         return 
     
 # função para ("menu de opções" = EXTRATO)
@@ -130,6 +130,12 @@ def extrato_bancario(conta_do_cliente):
     chave = False
      # testa se número da agencia digitado pelo usuário existe (só existe agencia 0001)
     agencia = teste_agencia('Agencia: ') # função auxiliar "teste_agencia"
+
+    # se agencia não existir finalizar função
+    if not agencia:
+        print('Agencia não existe!')
+        return
+
     # testa se número da conta digitado pelo usuário existe
     conta = teste_int('Conta: ') # função auxiliar "teste_int"
 
@@ -157,7 +163,7 @@ def extrato_bancario(conta_do_cliente):
             print(f"Saldo total R$:{conta_do_cliente_temporario['saldo']}")  # exibe saldo "conta_do_cliente"      
     else:
         # mensagem para usuário caso "conta_do_cliente" NÃO existe e encerrada função
-        print(f'\nNão existe conta: {conta} na agencia: {agencia}')
+        print(f'\nNão existe conta ou agencia solicitada...')
         return       
 
 # função para ("menu de opções" = CADASTRO CLIENTE)
@@ -196,13 +202,20 @@ def cadastro_cliente(clientes):
 # função para ("menu de opções" = ABRIR CONTA)
 def abrir_conta(clientes, numero_da_conta_cliente, conta_do_cliente):
     '''
-    Esta função realiza cadastro de cotas bancarias de clientes em forma de dicionário, exemplo abaixo somente das chaves:
+    Esta função realiza cadastro de cotas bancarias de clientes em forma de dicionário, 
+    exemplo abaixo somente das chaves:
     dict(agencia, numero_da_conta_cliente, {cliente}, saldo, extrato, limite_de_saque_diario)
-    OBS: um cliente pode ter varias contas, mas uma cota só pode pertencer a um cliente = "CPF" (regra de negocio)
+    OBS: um cliente pode ter varias contas, mas uma cota só pode pertencer a um cliente = 
+    "CPF" (regra de negocio)
 
-    :parâmetro "clientes": uma [lista] composta por {dicionários} com informações de contas individuais de cada cliente
-    :parâmetro "numero_da_conta_cliente": contador automático para criar número da cota (elimina risco de duplicação no número da conta) 
-    :parâmetro "conta_do_cliente": (variável global) = uma [lista] para armazenamento de informações conta dos clientes
+    :parâmetro "clientes": uma [lista] composta por {dicionários} com informações de contas 
+    individuais de cada cliente
+
+    :parâmetro "numero_da_conta_cliente": contador automático para criar número da cota 
+    (elimina risco de duplicação no número da conta) 
+    
+    :parâmetro "conta_do_cliente": (variável global) = uma [lista] para armazenamento de 
+    informações conta dos clientes
     '''
 
     # variaves locais para operação
@@ -246,10 +259,10 @@ def exibir_clientes_cadastrados(clientes):
         print('\nNão há clientes cadastrados')
     else:
         print()
-        print('-' * 170)
+        print('.' * 130)
         for c in clientes:
             print(c) # exibe informações da lista [clientes]
-            print('-' * 170)
+            print('.' * 130)
 
 # função para ("menu de opções" = EXIBIR CONTAS BANCARIAS)
 def exibir_contas_bancarias(conta_do_cliente):
@@ -263,13 +276,13 @@ def exibir_contas_bancarias(conta_do_cliente):
         print('\nNão há contas cadastradas')
     else:
         print()
-        print('-' * 170)
+        print('-' * 130)
         for c in conta_do_cliente:
             print(c) # exibe informações da lista [conta_do_cliente]
-            print('-' * 170)
+            print('-' * 130)
 
 # função para ("menu de opções" = FINALIZAR)
-def op(loop_op):
+def sair(loop_op):
     '''
     Função possibilita finalizar loop infinito da função (corpo principal do programa)
 
@@ -326,8 +339,7 @@ def teste_agencia(msg):
     if agencia == '0001':
         return agencia
     else:
-        print('Agencia não existe!')
-        main()
+        return False
 
 # função auxiliar que testa se cpf digitado consta na lista
 def filtro_cpf(clientes, cpf):
@@ -341,7 +353,7 @@ def filtro_cpf(clientes, cpf):
     # filtra se "cpf" do cliente já esta cadastrado e retorna ("True" + informações do cliente em forma de {dicionário}) ou (False)
     for cpf_existe in clientes:
         if cpf_existe['cpf'] == cpf:
-            return True, cpf_existe
+            return (True, cpf_existe)
         else:
             continue
     return False
@@ -425,11 +437,11 @@ def main():
 
         # "menu de opções" = FINALIZAR
         elif opcao == '8':
-            loop = op(loop)
+            loop = sair(loop)
 
         else:
             # caso usuário digite qualquer opção não existente no "Menu de opções" 
-            print('Opção invalida, digite a letra correspondente ao menu de opções:')
+            print('Opção invalida, digite o NUMERO correspondente ao "Menu de opções:"')
 
 main()
 # mensagem do termino do programa
