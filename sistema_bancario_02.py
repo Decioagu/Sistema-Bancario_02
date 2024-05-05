@@ -263,7 +263,7 @@ def exibir_clientes_cadastrados(clientes):
         print()
         print('.' * 130)
         for c in clientes:
-            print(c) # exibe informações da lista [clientes]
+            print('Cliente=>', c) # exibe informações da lista [clientes]
             print('.' * 130)
 
 # função para ("menu de opções" = EXIBIR CONTAS BANCARIAS)
@@ -280,7 +280,7 @@ def exibir_contas_bancarias(conta_do_cliente):
         print()
         print('-' * 130)
         for c in conta_do_cliente:
-            print(c) # exibe informações da lista [conta_do_cliente]
+            print('Conta=>',c) # exibe informações da lista [conta_do_cliente]
             print('-' * 130)
 
 # função para ("menu de opções" = FINALIZAR)
