@@ -1,3 +1,5 @@
+from datetime import datetime
+
 # mensagem de boas vindas
 apresentacao = ' SISTEMA BANCÁRIO '
 print()
@@ -192,7 +194,7 @@ def cadastro_cliente(clientes):
     
     # continuação do cadastro (variaves locais para operação)
     nome = input('Informe o nome completo:')
-    data_nascimento = input('Informe a data de nascimento (dd/mm/aaaa):')
+    data_nascimento = filtro_data_nascimento('Informe a data de nascimento (dd/mm/aaaa): ')    
     endereco = endereco_cliente() # função auxiliar para cadastrar endereço "endereco_cliente"
 
     # armazena dados dos clientes cadastrado na lista "clientes"
@@ -371,6 +373,21 @@ def endereco_cliente():
    estado = input('Estado: ')
    endereco = dict(logradouro = logradouro, numero = numero, bairro = bairro, cidade = cidade, estado = estado)
    return endereco
+
+# função auxilia "cadastro_cliente" digitar data valida
+def filtro_data_nascimento(msg):
+    '''
+    Obriga ao cliente a digita uma data valida no formato dia/mês/ano
+    '''
+    while True:
+        try:
+            data_str_data = input(msg).strip()
+            data_str_fmt = '%d/%m/%Y'
+            data = datetime.strptime(data_str_data, data_str_fmt).strftime('%d/%m/%Y') # data formatada
+            return data
+        except ValueError as erro:
+            print()
+            print(f'\nData não valida.\n')
 
 # ------------------------------------------------------------------------------------------------------------------
 
