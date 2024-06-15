@@ -400,7 +400,7 @@ def main():
 
     # loop do sistema bancário
     while loop:
-        # menu de operações existentes => "menu de opções"atingidoatigindo
+        # menu de operações existentes => "menu de opções"
         menu =  '''
 ============================================================
                     Menu de opções:
